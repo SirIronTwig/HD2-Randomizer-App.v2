@@ -4,7 +4,7 @@ public class Armor {
     private final Level level;
     private final String passive;
 
-    enum Level{
+    public enum Level{
         Light,
         Med,
         Hevay
