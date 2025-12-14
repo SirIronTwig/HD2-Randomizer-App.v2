@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Warbonds {
 
     public enum Bonds {
-        //med "Extra Padding" armor is always avaible work into logic!
+
         Helldivers_Mobilize(
                 new String[]{
                         "Ar-23P Liberator Penetrator", //prim
@@ -267,9 +267,9 @@ public class Warbonds {
         return all;
     }
     public static String[] getAllArmor(Bonds bond) {
-        String[] all = concat(bond.getArmor());
+
         //, bond.getSecondary(), bond.getThrowable(), bond.getBackpack(), bond.getStratagem()
-        return all;
+        return concat(bond.getArmor());
     }
     public static String addLightArmor(String passive){
         return String.valueOf(new Armor(Armor.Level.Light, passive));

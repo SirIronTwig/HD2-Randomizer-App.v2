@@ -7,7 +7,7 @@ public class Armor {
     enum Level{
         Light,
         Med,
-        Hevay;
+        Hevay
     }
 
     public Armor(Level level, String passive){
