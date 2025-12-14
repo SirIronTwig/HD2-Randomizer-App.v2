@@ -1,12 +1,9 @@
 package me.abbatrombone.traz;
 
 import me.abbatrombone.traz.CustomComponents.OutputJTextPane;
+import me.abbatrombone.traz.Panels.LabelPanel;
 
 import javax.swing.*;
-import javax.swing.text.BadLocationException;
-import javax.swing.text.SimpleAttributeSet;
-import javax.swing.text.StyleConstants;
-import javax.swing.text.StyledDocument;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 
@@ -20,6 +17,7 @@ public class HDApp {
     private JLabel titleLabel;
     private JPanel mainPanel;
     private OutputJTextPane output;
+    private final LabelPanel labelPanel = new LabelPanel();
 
     public HDApp() {
         initComponents();
@@ -51,21 +49,20 @@ public class HDApp {
         titleLabel.setText("Helldivers 2 Randomizer");
 
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
-        mainPanel.setLayout(mainPanelLayout);
+
         mainPanelLayout.setHorizontalGroup(
-                mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                mainPanelLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
                         .addGroup(mainPanelLayout.createSequentialGroup()
-                                .addGap(142, 142, 142)
-                                .addComponent(titleLabel)
-                                //.addContainerGap(161, Short.MAX_VALUE))
+                                .addGap(142)
+                                .addComponent(labelPanel.getPanel())
                         )
         );
+
         mainPanelLayout.setVerticalGroup(
-                mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                mainPanelLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
                         .addGroup(mainPanelLayout.createSequentialGroup()
-                                .addGap(19, 19, 19)
-                                .addComponent(titleLabel)
-                                //.addContainerGap(23, Short.MAX_VALUE))
+                                .addGap(19)
+                                .addComponent(labelPanel.getPanel())
                         )
         );
 
