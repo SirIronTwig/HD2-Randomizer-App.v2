@@ -262,9 +262,8 @@ public class Warbonds {
 
     // example: return all guns across categories for a bond as a single array
     public static String[] getAllGuns(Bonds bond) {
-        String[] all = concat(bond.getPrimary());
         //, bond.getSecondary(), bond.getThrowable(), bond.getBackpack(), bond.getStratagem()
-        return all;
+        return concat(bond.getPrimary());
     }
     public static String[] getAllArmor(Bonds bond) {
 

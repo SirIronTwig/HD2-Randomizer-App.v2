@@ -18,6 +18,7 @@ public class Challenges {
         challanges.add("We are cutting off your stim addition. You cannot use stims.");
         challanges.add("Collect at least the half the total samples");
         challanges.add("Do the mission in half the operation time");
+        challanges.add("Can only use blue strategems once");
 
         int challangesNumber = random.nextInt(challanges.size());
 

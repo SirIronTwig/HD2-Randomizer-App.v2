@@ -65,22 +65,18 @@ public class HDApp {
 
 
         random.setFont(new Font("Segoe UI", Font.BOLD + Font.ITALIC, 14)); // NOI18N
-        //random.setBounds(10, 10, 700, 700);
         random.setText("Full Random");
         random.addActionListener(this::randomButtonActionPerformed);
 
         semirandom.setFont(new Font("Segoe UI", Font.BOLD + Font.ITALIC, 14)); // NOI18N
-        //semirandom.setBounds(10, 10, 700, 700);
         semirandom.setText("Semi Random");
         semirandom.addActionListener(this::semiRandomButtonActionPerformed);
 
         clear.setFont(new Font("Segoe UI", Font.BOLD + Font.ITALIC, 14)); // NOI18N
-        //clear.setBounds(10, 10, 700, 700);
         clear.setText("Clear");
         clear.addActionListener(this::clearButtonActionPerformed);
 
         challenges.setFont(new Font("Segoe UI", Font.BOLD + Font.ITALIC, 14)); // NOI18N
-        //clear.setBounds(10, 10, 700, 700);
         challenges.setText("Challenges");
         challenges.addActionListener(this::challengeButtonActionPerformed);
 

@@ -9,6 +9,7 @@ public class Armor {
         Med,
         Hevay
     }
+    //Enum for passives???
 
     public Armor(Level level, String passive){
         this.level = level;
