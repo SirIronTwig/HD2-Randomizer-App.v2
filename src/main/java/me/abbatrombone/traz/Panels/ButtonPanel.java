@@ -42,6 +42,9 @@ public class ButtonPanel {
         tips.setText("Tips");
         tips.addActionListener(this::tipButtonActionPerformed);
 
+        panel.setMaximumSize(new Dimension(200,300));
+        panel.setPreferredSize(new Dimension(200,300));
+
         GroupLayout layout = new GroupLayout(panel);
         panel.setLayout(layout);
 
@@ -51,7 +54,7 @@ public class ButtonPanel {
                                 .addComponent(challenges)
                                 .addComponent(tips)
                         )
-                        .addGap(200)//this puts it on the edge there has to be a better way to do this
+                        .addGap(380)//this puts it on the edge there has to be a better way to do this
                         .addGroup(layout.createParallelGroup(GroupLayout.Alignment.TRAILING)
                                 .addComponent(random)
                                 .addComponent(semirandom)
